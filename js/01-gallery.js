@@ -48,3 +48,8 @@ instance.show();
 function closeModal({code, target}) {
     if(code === 'Escape' || target.nodeName === 'IMG')
     instance.close()
+}
+}
+
+
+

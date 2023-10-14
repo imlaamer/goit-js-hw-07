@@ -26,3 +26,4 @@ const lightbox = new SimpleLightbox('.gallery a', {overlayOpacity: 0.98, caption
 lightbox.on('show.simplelightbox', function () {
   lightbox.refresh()
 });
+
