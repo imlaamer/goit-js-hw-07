@@ -21,7 +21,7 @@ galleryImages.forEach(image => {image.style.width = '300px';  image.style.heigth
 
 
 
-const lightbox = new SimpleLightbox('.gallery a', {overlayOpacity: 0.98, captionsData: 'alt'});
+const lightbox = new SimpleLightbox('.gallery a', {overlayOpacity: 0.98, captionsData: 'alt' , captionDelay: 250});
 
 lightbox.on('show.simplelightbox', function () {
   lightbox.refresh()
