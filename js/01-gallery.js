@@ -33,9 +33,6 @@ let url  = event.target.dataset.source;
 const instance = basicLightbox.create(`<div class="modal"><img src='${url}' width="800" height="600"></img></div>`,
  {
 onShow: (instance) => {
-    if (event.target.nodeName !== 'IMG') {
-        return; 
-    }
 instance.element('.modal').addEventListener('click',  closeModal);
 window.addEventListener('keydown', closeModal) 
 },
