@@ -20,9 +20,12 @@ function openModal(event) {
   if (event.target.nodeName !== "IMG") return;
 
   let url = event.target.dataset.source;
-
+  
   const instance = basicLightbox.create(
-    `<div class="modal"><img src='${url}' width="800" height="600"></img></div>`,
+    `<div class="modal">
+      <img src='${url}' width="800" height="600"></img>
+    </div>`,
+
     {
       onShow: (instance) => {
         instance.element(".modal").addEventListener("click", closeModal);
